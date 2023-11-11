@@ -72,9 +72,17 @@ const GalleryPage = () => {
 
   return (
     <section className='px-5 py-5 relative sm:px-10 sm:py-10 md:px-20'>
-      <div className='grid grid-cols-1 gap-3 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'>
-        {renderImages}
-      </div>
+      {images.length === 0 ? (
+        <div className='flex justify-center items-center'>
+          <h1 className='text-sm md:text-4xl font-bold text-center'>
+            No photos to show :(
+          </h1>
+        </div>
+      ) : (
+        <div className='grid grid-cols-1 gap-3 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'>
+          {renderImages}
+        </div>
+      )}
       <SideFeatures
         onAddButtonClick={onAddButtonClickFunction}
         onTrashButtonClick={onTrashButtonClickFunction}

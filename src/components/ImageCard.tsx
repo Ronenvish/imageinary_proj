@@ -90,7 +90,7 @@ const ImageCard = ({
               </p>
               <div className='mt-5 flex justify-between items-center gap-2'>
                 <div className='flex items-center gap-4 text-ellipsis overflow-hidden whitespace-nowrap'>
-                  <div className='w-5 h-5 rounded-full bg-indigo-600 flex justify-center items-center text-white text-xs font-bold'>
+                  <div className='w-5 h-5 flex justify-center items-center text-white text-xs font-bold border-b-2'>
                     {_id}
                   </div>
                   <p className='text-white text-xs md:text-sm text-ellipsis overflow-hidden whitespace-nowrap'>
